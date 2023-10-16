@@ -1,7 +1,4 @@
-pub trait TreeKey<const Y: usize = 1> {
-    fn metadata() {
-        unimplemented!()
-    }
+pub trait T<const Y: usize = 1> {
+    fn f() {}
 }
-
-impl<T, const N: usize> TreeKey for [T; N] {}
+impl T for () {}

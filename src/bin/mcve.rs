@@ -1,5 +1,5 @@
-use mcve::TreeKey;
+use mcve::T;
 
-pub fn main() -> () {
-    <[(); 0] as TreeKey>::metadata();
+pub fn main() {
+    <() as T>::f()
 }
